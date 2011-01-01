@@ -64,7 +64,7 @@ public class WeatherAlertMainActivity extends ListActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main);
 
-    List<String> list = new WeatherAlertReadCAP().read();
+    List<String> list = null; //new WeatherAlertReadCAP().read();
     setListAdapter(new ArrayAdapter<String>(this, R.layout.listitem, list));
 
     ListView lv = getListView();
